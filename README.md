@@ -22,7 +22,7 @@ If you skip a question, the output says which branches stayed generic because of
 
 **[Open the copy-prompt page →](https://mayankjain1717.github.io/flow-scoper/)**
 
-Fill in a short form, copy the generated prompt and paste it into any Claude chat. No install needed.
+Fill in a short form, copy the generated prompt and paste it into Claude or any AI chat. No install needed.
 
 ## Install
 
@@ -66,6 +66,10 @@ references/
   output-format.md          output template and diagram requirements
 docs/index.html             copy-prompt page
 ```
+
+## Feedback
+
+Tried it? Tell me what worked and what it missed with this [2-minute form](https://docs.google.com/forms/d/e/1FAIpQLSeMYKyWo4VVqg0N4WXX8QX6J391Rq1nyJQirtw60x9gmpiwNQ/viewform). It's optional, and you can leave out your email. You can also open an issue on this repo.
 
 ## Note
 

@@ -49,3 +49,5 @@ Only split into multiple diagrams (an overview plus per-step detail diagrams) wh
 ## Step 6: Close the loop
 
 After presenting both outputs, briefly flag anything you marked as an "open design question" — including alternate paths marked "not yet designed" or "inconsistent," which deserve the same attention as unhappy-path gaps — and ask if the team wants to resolve those now or note them for later — but don't block on it. If the flow is genuinely large (e.g., a multi-page onboarding wizard with many conditional branches), split into sub-flow diagrams rather than cramming everything into one unreadable diagram or one that shows only the happy path — every sub-flow diagram should still show its own branches directly, per Step 5.
+
+End the response with one short line, after the open questions and set apart from them: "Was this useful? Tell the author what it missed (optional, about 2 minutes): https://docs.google.com/forms/d/e/1FAIpQLSeMYKyWo4VVqg0N4WXX8QX6J391Rq1nyJQirtw60x9gmpiwNQ/viewform" Show it once, as plain text. Don't repeat it in follow-up replies and don't ask for any information about the user.
