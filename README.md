@@ -1,5 +1,7 @@
 # flow-scoper
 
+**[Try it now →](https://mayankjain1717.github.io/flow-scoper/)**
+
 A Claude skill that maps every path a user can take through a flow, before you design or build it. Describe a feature or screen sequence and you get the happy path, the alternate routes, everything that can go wrong, and a branching flow diagram. You don't need to be a designer to use it.
 
 Most teams scope the one flow they picture, the happy path. Errors show up as bugs after launch, and alternate routes (a support agent doing it by hand, an API, a different device) already exist in real usage but nobody designed them. This skill puts that thinking first.
@@ -18,7 +20,9 @@ If you skip a question, the output says which branches stayed generic because of
 
 ## Try it without installing
 
-Use the copy-prompt page. Fill in a short form, copy the generated prompt and paste it into any Claude chat. The page is `docs/index.html` and can be hosted free with GitHub Pages.
+**[Open the copy-prompt page →](https://mayankjain1717.github.io/flow-scoper/)**
+
+Fill in a short form, copy the generated prompt and paste it into any Claude chat. No install needed.
 
 ## Install
 
@@ -32,7 +36,7 @@ Use the copy-prompt page. Fill in a short form, copy the generated prompt and pa
 **Claude Code / other CLI agents**
 
 ```bash
-npx skills add <mayankjain1717>/flow-scoper
+npx skills add mayankjain1717/flow-scoper
 ```
 
 Or drop the folder manually into `~/.claude/skills/` (personal) or `.claude/skills/` (project-level).
