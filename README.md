@@ -4,7 +4,7 @@
 
 A Claude skill that maps every path a user can take through a flow, before you design or build it. Describe a feature or screen sequence and you get the happy path, the alternate routes, everything that can go wrong, and a branching flow diagram. You don't need to be a designer to use it.
 
-Most teams scope the one flow they picture, the happy path. Errors show up as bugs after launch, and alternate routes (a support agent doing it by hand, an API, a different device) already exist in real usage but nobody designed them. This skill puts that thinking first.
+AI means almost anyone can build now: PMs, founders, analysts and engineers ship features without a designer in the room. What they often don't have is a designer's habit of asking "what else could happen here?" Most teams scope the one flow they picture, the happy path. Errors show up as bugs after launch, and alternate routes (a support agent doing it by hand, an API, a different device) already exist in real usage but nobody designed them. Flow Scoper brings that thinking to whoever is building, before anything gets built.
 
 ## What it does
 
