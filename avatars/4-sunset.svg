@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FDBA74"/><stop offset=".5" stop-color="#F43F5E"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+<clipPath id="c"><circle cx="512" cy="560" r="300"/></clipPath></defs>
+<rect width="1024" height="1024" fill="#1E1B4B"/>
+<g clip-path="url(#c)"><rect x="200" y="260" width="624" height="600" fill="url(#s)"/>
+<g fill="#1E1B4B"><rect x="200" y="640" width="624" height="14"/><rect x="200" y="690" width="624" height="22"/><rect x="200" y="745" width="624" height="32"/><rect x="200" y="810" width="624" height="60"/></g></g>
+<text x="512" y="545" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-weight="700" font-size="230" fill="#fff" letter-spacing="-6">MJ</text>
+<g fill="#fff"><circle cx="180" cy="180" r="5"/><circle cx="840" cy="140" r="4"/><circle cx="880" cy="330" r="3"/><circle cx="120" cy="420" r="3"/><circle cx="300" cy="110" r="3"/></g>
+</svg>
