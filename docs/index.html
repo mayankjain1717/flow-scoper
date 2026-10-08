@@ -142,6 +142,7 @@ button.link:hover { color: var(--fg); }
 [hidden] { display: none !important; }
 .stickybar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: none; align-items: center; gap: 16px; background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(16, 24, 40, .08); padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); }
 .stickybar.show { display: flex; }
+.stickybar.typing { display: none !important; }
 .stickybar .sb-prog { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
 .stickybar button { flex: none; width: auto; display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; }
 .stickybar svg { width: 18px; height: 18px; }
@@ -503,6 +504,13 @@ $("copy").addEventListener("click", async () => {
 });
 
 $("sbCopy").addEventListener("click", () => $("copy").click());
+// While the on-screen keyboard is open, hide the fixed bar so it does not eat the small visible area.
+(function(){
+  const sb = $("stickyBar");
+  const isField = (el) => el && /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName) && el.type !== "checkbox" && el.type !== "radio";
+  document.addEventListener("focusin", (e) => { if (isField(e.target)) sb.classList.add("typing"); });
+  document.addEventListener("focusout", () => { setTimeout(() => { if (!isField(document.activeElement)) sb.classList.remove("typing"); }, 50); });
+})();
 (function(){
   const sb = $("stickyBar"), main = $("copy");
   if (!("IntersectionObserver" in window)) { sb.classList.add("show"); return; }
