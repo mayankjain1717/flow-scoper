@@ -10,7 +10,7 @@
 <style>
 /* Layout: a calm header, then two columns. Left: three grouped cards (the flow, who and where, optional context). Right: a sticky prompt panel with progress and the copy button. Stacks on narrow screens. The three route styles (solid, dashed, dotted) are the brand mark. */
 :root {
-  --bg: #ffffff;
+  --bg: #f3f3f3;
   --surface: #ffffff;
   --fg: #101828;
   --muted: #5b6676;
@@ -142,6 +142,12 @@ button.link:hover { color: var(--fg); }
 [hidden] { display: none !important; }
 .stickybar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: none; align-items: center; gap: 16px; background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(16, 24, 40, .08); padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); }
 .stickybar.show { display: flex; }
+@media (max-width: 639px) {
+  .topnav { flex-wrap: wrap; margin-bottom: -22px; }
+  .brand { display: contents; }
+  .topnav .mark { margin-right: auto; }
+  .topnav h1 { order: 2; flex-basis: 100%; margin-top: 24px; font-size: 30px; }
+}
 .stickybar.typing { display: none !important; }
 .stickybar .sb-prog { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
 .stickybar button { flex: none; width: auto; display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; }
@@ -189,11 +195,6 @@ footer { color: var(--muted); font-size: 13px; max-width: 640px; }
   </nav>
   <header>
     <p class="lede">Map every path before you build. Answer what you know, copy the prompt, and paste it into Claude or any AI chat to get the happy path, the alternate routes, everything that can go wrong, and a flow diagram.</p>
-    <ol class="how">
-      <li>Fill in what you know</li>
-      <li>Copy the prompt</li>
-      <li>Paste it into Claude or any AI chat</li>
-    </ol>
   </header>
 
   <div class="layout">
