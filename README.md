@@ -77,4 +77,4 @@ This is an AI-assisted scoping pass. It's meant to sit alongside conversations w
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): free to use, share and adapt with credit to Mayank Jain, not for commercial use. See [LICENSE](LICENSE).
