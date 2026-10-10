@@ -351,7 +351,7 @@ footer { color: var(--muted); font-size: 13px; max-width: 640px; }
   <div class="sb-prog"><span id="sbCount">0 of 9 answered</span><div class="track" aria-hidden="true"><div class="bar" id="sbBar"></div></div></div>
   <button type="button" class="primary" id="sbCopy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V9a2 2 0 0 1 2-2h9"/></svg>Copy prompt</button>
 </div>
-<footer>The prompt carries the full Flow Scoper skill instructions, so it works in Claude or any AI chat without installing anything. Unanswered questions are marked as skipped, and the output notes which branches stayed generic because of that.</footer>
+<footer>The prompt carries the full Flow Scoper skill instructions, so it works in Claude or any AI chat without installing anything. Unanswered questions are marked as skipped, and the output notes which branches stayed generic because of that. Anonymous page counts only: what you type never leaves your browser.</footer>
 </div>
 
 <script>
@@ -495,6 +495,7 @@ $("copy").addEventListener("click", async () => {
     lastCopied = t;
     s.innerHTML = 'Pasted it in? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMYKyWo4VVqg0N4WXX8QX6J391Rq1nyJQirtw60x9gmpiwNQ/viewform" target="_blank" rel="noopener">Tell me how it went</a> (optional).';
     showToast("Copied!");
+    try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: "copy-prompt", title: "Copy prompt", event: true }); } catch (e) {}
   } catch (err) {
     const d = document.querySelector(".preview");
     d.open = true;
@@ -520,6 +521,7 @@ $("sbCopy").addEventListener("click", () => $("copy").click());
 
 refresh();
 </script>
+<script data-goatcounter="https://mayank-jain.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
