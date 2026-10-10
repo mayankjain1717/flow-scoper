@@ -1,6 +1,6 @@
 # flow-scoper
 
-**[Try it now →](https://mayankjain1717.github.io/flow-scoper/)**
+**[Try it now →](https://mayankjain1717.github.io/flow-scoper/?ref=github)**
 
 A Claude skill that maps every path a user can take through a flow, before you design or build it. Describe a feature or screen sequence and you get the happy path, the alternate routes, everything that can go wrong, and a branching flow diagram. You don't need to be a designer to use it.
 
@@ -20,7 +20,7 @@ If you skip a question, the output says which branches stayed generic because of
 
 ## Try it without installing
 
-**[Open the copy-prompt page →](https://mayankjain1717.github.io/flow-scoper/)**
+**[Open the copy-prompt page →](https://mayankjain1717.github.io/flow-scoper/?ref=github)**
 
 Fill in a short form, copy the generated prompt and paste it into Claude or any AI chat. No install needed.
 
