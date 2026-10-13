@@ -1,6 +1,6 @@
 # flow-scoper
 
-**[Try it now →](https://mayankjain1717.github.io/flow-scoper/?ref=github)**
+**[Try it now →](https://mayankjain1717.github.io/flow-scoper/?ref=github)**  ·  **[Get it on Agensi →](https://www.agensi.io/skills/flow-scoper)**
 
 A Claude skill that maps every path a user can take through a flow, before you design or build it. Describe a feature or screen sequence and you get the happy path, the alternate routes, everything that can go wrong, and a branching flow diagram. You don't need to be a designer to use it.
 
